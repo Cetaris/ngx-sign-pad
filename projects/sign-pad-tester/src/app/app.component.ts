@@ -8,7 +8,7 @@ import { EImageType, SignPadComponent } from 'ngx-sign-pad';
 export class AppComponent {
   imageTypes = EImageType;
   signature = null;
-  @ViewChild(SignPadComponent) signaturePad: SignPadComponent;
+  @ViewChild(SignPadComponent, { static: true }) signaturePad: SignPadComponent;
   
   constructor() {
   }

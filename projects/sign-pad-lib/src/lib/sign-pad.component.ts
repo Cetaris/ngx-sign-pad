@@ -33,7 +33,7 @@ export class SignPadComponent implements AfterContentInit {
     return this._options;
   }
 
-  @ViewChild('canvasElement') canvasElementRef: ElementRef<HTMLCanvasElement>;
+  @ViewChild('canvasElement', { static: true }) canvasElementRef: ElementRef<HTMLCanvasElement>;
 
   public signaturePad: SignaturePad;
   private _options: SignaturePadOptions;
