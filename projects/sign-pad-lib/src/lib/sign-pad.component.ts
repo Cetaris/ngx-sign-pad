@@ -6,7 +6,6 @@ import {
   EventEmitter,
   Output,
   Input,
-  OnChanges,
 } from "@angular/core";
 import SignaturePad from "signature_pad";
 import { EImageType } from "./models/image-type.enum";
