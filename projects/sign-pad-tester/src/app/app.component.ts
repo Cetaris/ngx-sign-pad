@@ -1,17 +1,16 @@
-import { Component, ViewChild } from '@angular/core';
-import { EImageType, SignPadComponent } from 'ngx-sign-pad';
+import { Component, ViewChild } from "@angular/core";
+import { EImageType, SignPadComponent } from "ngx-sign-pad";
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
   imageTypes = EImageType;
   signature = null;
   @ViewChild(SignPadComponent, { static: true }) signaturePad: SignPadComponent;
-  
-  constructor() {
-  }
+
+  constructor() {}
 
   clear() {
     this.signaturePad.clear();
