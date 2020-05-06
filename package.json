@@ -6,7 +6,7 @@
     "start": "ng serve sign-pad-tester --open",
     "build": "ng build",
     "watch_lib": "ng build sign-pad-lib --watch",
-    "build_lib": "ng build sign-pad-lib",
+    "build_lib": "ng build sign-pad-lib --prod",
     "npm_pack": "cd dist/sign-pad-lib && npm pack",
     "package": "npm run build_lib && npm run npm_pack",
     "test": "ng test",
