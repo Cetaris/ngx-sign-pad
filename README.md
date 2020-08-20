@@ -4,13 +4,15 @@
 - npm i
 - cd projects/sign-pad-lib
 - npm i
-- cd root
-- npm run npm_package
+- cd ../../ (ngx-sign-pad)
+- npm run package
 - add back to root package.json: "ngx-sign-pad": "file:dist/sign-pad-lib/ngx-sign-pad-0.0.- 1-alpha.4.tgz",
 - npm i
 - npm run start
 
 ## publish to Github
+
+0. update version# in projects/sign-pad-lib/package.json, then `npm run package`
 
 1. update projects/sign-pad-lib/package.json,
 
@@ -64,12 +66,11 @@ import { SignPadModule } from 'ngx-sign-pad';
 ### 3. Use ngx-sign-pad
 
 ```typescript
-import { Component, ViewChild } from "@angular/core";
-import { EImageType, SignPadComponent } from "ngx-sign-pad";
+import { Component, ViewChild } from '@angular/core';
+import { EImageType, SignPadComponent } from 'ngx-sign-pad';
 
 @Component({
-  template:
-    '<ngx-sign-pad [(signature)]="signature" [type]="imageTypes.SVG"></ngx-sign-pad>',
+  template: '<ngx-sign-pad [(signature)]="signature" [type]="imageTypes.SVG"></ngx-sign-pad>',
 })
 export class AppComponent {
   imageTypes = EImageType;

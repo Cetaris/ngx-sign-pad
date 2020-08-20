@@ -1,6 +1,6 @@
 {
   "name": "@kwu-work/ngx-sign-pad",
-  "version": "0.0.1-alpha.4",
+  "version": "1.0.3",
   "description": "A fork of [An Angular wrapper for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad)].",
   "keywords": [
     "Angular",
