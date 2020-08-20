@@ -19,23 +19,19 @@
    - "name": "@kwu-work/ngx-sign-pad",
    - "repository" - "url": "https://github.com/kwu-work/ngx-sign-pad"
 
-2. update /package.json
-
-   - add flag --prod in ng build to opt out of Ivy for better compatibility, as suggested by Angular
-
-3. cd dist/sign-pad-lib, create a .npmrc file:
+2. cd dist/sign-pad-lib, create a .npmrc file:
 
 ```
   registry=https://npm.pkg.github.com/kwu-work
   //npm.pkg.github.com/:_authToken=${GITHUB_PERSONAL_ACCESS_TOKEN}
 ```
 
-4. npm login --registry=https://npm.pkg.github.com
+3. npm login --registry=https://npm.pkg.github.com
 
    - user name: kwu-work
    - password: \${GITHUB_PERSONAL_ACCESS_TOKEN}
 
-5. npm publish
+4. npm publish
 
 # ngx-sign-pad
 
